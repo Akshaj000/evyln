@@ -1,5 +1,5 @@
-import {App, computed, ComputedRef, inject, ref} from 'vue';
-import {WoolNode, WoolServer} from '../types/WoolTypes';
+import { App, computed, ComputedRef, inject, ref } from 'vue';
+import { WoolNode, WoolServer } from '../../types/WoolTypes';
 
 const WoolDialogManager = Symbol('WoolDialogManager');
 
@@ -25,7 +25,7 @@ export default function (app: App, options: DialogueManagerOptions): void {
 
 interface DialogueManagerInterface {
   readonly isLoaded: ComputedRef<boolean>;
-  readonly errorMessage: ComputedRef<string|null>;
+  readonly errorMessage: ComputedRef<string | null>;
   readonly currentStep: ComputedRef<WoolNode>;
   readonly isEnded: ComputedRef<boolean>;
 
