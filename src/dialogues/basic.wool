@@ -2,21 +2,23 @@ title: Start
 tags: 
 speaker: Evyln
 colorID: 1
-position: -1412,-271
+position: -2324,-139
 ---
-Hi, my name is Evelyn. I’m here to answer all your questions regarding HCM! Before we start, it’s important to know that this is a safe space. If at any point, something feels unclear or if you have any worries, please let me know. With that being said, what brings you here today?
+Hi, my name is Evelyn. I’m here to answer all your questions regarding HCM! Before we start, it’s important to know that this is a safe space. If at any point, something feels unclear or if you have any worries, please let me know. 
 
-[[Hi Evelyn, nice to meet you. I discovered that one of my parents has HCM.|HCMDescription]]
+Let’s start easy, what is your name?
+
+[[Hi Evelyn, nice to meet you. My name is <<input type="text" value="$userFirstName" min="2" max="30">>.|HCMIntro]]
 
 ===
-title: HCMDescription
+title: HCMHowMuchKnow
 tags: 
 speaker: Evyln
 colorID: 2
-position: -908,-188
+position: -1327,-159
 ---
 
-Hi, it's nice to meet you too. I'm really sorry to hear about your parent being diagnosed with Hypertrophic Cardiomyopathy (HCM). It's a condition that can be genetic, so it's important to gather information and make informed decisions. How much do you already know about HCM? I’d be happy to explain more if that would be helpful."
+How much info does he have about HCM?
 
 [[I have never heard about HCM before, could you tell me what it is? |NoHCMKnowledge]]
 [[I don’t know a lot about HCM yet, could you tell me more about it?|SomeHCMKnowledge]]
@@ -27,7 +29,7 @@ title: NoHCMKnowledge
 tags: 
 speaker: Evyln
 colorID: 2
-position: -476,-2
+position: -833,-981
 ---
 
 Of course! I understand that it can be a bit overwhelming to discover that one of your parents has HCM.
@@ -41,7 +43,7 @@ title: SomeHCMKnowledge
 tags: 
 speaker: Evyln
 colorID: 2
-position: -427,-580
+position: -813,-146
 ---
 
 Okay, let me sum it up for you. Hypertrophic Cardiomyopathy (HCM) is a hereditary heart condition where the heart muscle thickens. Since one of your parents has HCM, you have a 50% chance of inheriting the predisposition, but not everyone who has it develops symptoms. So, there's no need to worry too much.
@@ -53,10 +55,10 @@ title: HCMKnowledge
 tags: 
 speaker: Evyln
 colorID: 2
-position: -659,466
+position: -813,547
 ---
 
-Of course! The choice to get a DNA test is a very personal choice. Do you have any questions regarding this decision?
+Of course, $userFirstName! The choice to get a DNA test is a very personal choice. Do you have any questions regarding this decision?
 
 [[I have some questions. |HCMQuestion2]]
 
@@ -65,26 +67,27 @@ title: HCMQuestion
 tags: 
 speaker: Evyln
 colorID: 2
-position: 120,-25
+position: -380,-967
 ---
 
 Would you like to know more about a certain aspect of HCM?
 
+[[Yes, I would like to understand HCM from a more scientific view.|HCMScientific]]
 [[I have some concerns regarding my daily life.|HCMConcern]]
-[[I would like to know more about HCM.|HCMKnowMore]]
+[[Yes, I would like to learn about how HCM works and what can be done about it.|HCMKnowMore]]
 
 ===
 title: HCMQuestion2
 tags: 
 speaker: Evyln
 colorID: 2
-position: 69,840
+position: -305,797
 ---
 
 Would you like to know?
 
 [[I have some concerns regarding my daily life.|HCMConcern]]
-[[What are the ups/downs of a DNA test?|HCMUpsAndDown]]
+[[What are the ups/downs of a DNA test?|DNATestUpsAndDown]]
 [[I have some practical concerns|HCMPracticality]]
 
 ===
@@ -92,7 +95,7 @@ title: HCMConcern
 tags: 
 speaker: Evyln
 colorID: 2
-position: 815,79
+position: -93,143
 ---
 
 What are your concerns?
@@ -107,7 +110,7 @@ title: HCMSocialLife
 tags: 
 speaker: Evyln
 colorID: 2
-position: 1425,-78
+position: 215,-293
 ---
 
 Thinking about your social life is really important, especially since you’re young and active. The good news is that many people can still lead a relatively healthy social life, despite having HCM. It’s possible that HCM might limit some activities like intense exercise, depending on the severity. This could mean needing to make adjustments to certain physical activities with friends. Being open with the people close to you can make a big difference, as it can help them understand if you need to slow down or take extra care.
@@ -119,7 +122,7 @@ title: HCMEducation
 tags: 
 speaker: Evyln
 colorID: 2
-position: 1470,633
+position: 687,22
 ---
 
 Of course, you won’t have any problems continuing your education and pursuing your goals. Since HCM affects each person differently, it’s important to get regular check-ups with your healthcare provider. In case you experience any symptoms, it’s necessary to make small adjustments like pacing yourself with physical activities. Again, your education is definitely something you can continue.
@@ -131,7 +134,7 @@ title: HCMTravel
 tags: 
 speaker: Evyln
 colorID: 2
-position: 1262,987
+position: 916,197
 ---
   
 Yes Hugo, in most cases you can still travel, which is good news! Being diagnosed with HCM doesn’t really stop you from going on trips and exploring. You should keep in mind that things like avoiding overexertion, especially during long trips and high altitude areas. It’s always a good idea to let your healthcare provider know about your trip beforehand, and keeping some medications handy. 
@@ -143,7 +146,7 @@ title: HCMSports
 tags: 
 speaker: Evyln
 colorID: 2
-position: 1408,324
+position: 453,-141
 ---
   
 I understand playing sports is an integral part of your life. However, if you’re diagnosed with HCM, it’s recommended to avoid strenuous exercise. After consulting with a specialist, you can get to know which sport would be best suited for your condition, as the effects of HCM varies from person to person. So yes, you might still be able to continue playing sports.
@@ -155,39 +158,21 @@ title: HCMKnowMore
 tags: 
 speaker: Evyln
 colorID: 2
-position: 459,-1421
+position: 254,-957
 ---
+What would you like to know more regarding HCM? Would you like to learn about...
 
-What would you like to know?
-
-[[I would like to understand HCM more in-depth|HCMIndepth]]
-[[I would like to learn more about the different symptoms.|HCMSymptoms]]
-[[How should I go about it?|HCMNextSteps]]
-[[I would like to learn more about treatments & counseling.|HCMTreatment]]
-[[I would like to learn more about how heredity in HCM works.|HCMHeredity]]
-[[I would like to know about the costs that could incur if I proceed.|HCMCost]]
-
-===
-title: HCMIndepth
-tags: 
-speaker: Evyln
-colorID: 2
-position: 1274,-1980
----
-
-As mentioned before, HCM means thickened heart muscle, especially the septum between the heart chambers.  The heart muscle can thicken over the course of life, and can do so without putting more strain on the heart.
-
-Only when the muscle becomes seriously thickened does it make the heart less able to pump blood.
-
-<<action type="image" value="hcm.png">>
+[[...different HCM symptoms?|HCMSymptoms]]
+[[...how HCM can impact me?|HCMImpact]]
+[[...HCM treatments & counseling/|HCMTreatment]]
+[[...how heredity in HCM works?|HCMHeredity]]
 ===
 title: HCMSymptoms
 tags: 
 speaker: Evyln
 colorID: 2
-position: 1228,-645
+position: 696,-1428
 ---
-
 It’s important to note that not everyone with HCM develop symptoms. The first symptoms usually only occur in adulthood and HCM is usually diagnosed between 40 & 60.
 
 But some of the symptoms are: 
@@ -198,51 +183,50 @@ Heart rhythm disorders, where the heart beats quickly or irregularly
 Sometimes cardiac arrhythmias can lead to dizziness, loss of consciousness or even sudden death. 
 In rare cases, cardiac arrest is the first complain.
 
+[[Can you tell me more regarding other aspects of HCM?|HCMQuestion]]
 ===
-title: HCMNextSteps
+title: HCMImpact
 tags: 
 speaker: Evyln
 colorID: 2
-position: 1298,-902
+position: 707,-552
 ---
-
 You have three options if you decide to proceed: consultation with a genetics counselor, a DNA test or both. A consultation is highly recommended and from there, you can learn more about HCM and decide whether or not to take a DNA test. If you do not take the DNA test, we advise you to have yourself checked regularly by the cardiologist.
 
+[[Can you tell me more regarding other aspects of HCM?|HCMQuestion]]
 ===
 title: HCMTreatment
 tags: 
 speaker: Evyln
 colorID: 2
-position: 1294,-1150
+position: 701,-1124
 ---
+Whether or not you have developed symptoms of HCM, it is highly recommended to get regular check-ups and implement some lifestyle changes.
 
-Whether or not you have developed symptoms of HCM, it is highly recommended to get regular check-ups and implement some
+Are there any symptoms or characteristics of HCM present? (eg. chest pain, reduced fitness, shortness of breath, etc.)
+
+[[Yes|YesSymptom]]
+[[No|NoSymptom]]
+[[Can you elaborate on the symptoms & characteristics?|ElaborateSymptom]]
 ===
 title: HCMHeredity
 tags: 
 speaker: Evyln
 colorID: 2
-position: 1223,-1425
+position: 704,-852
 ---
+Since you’re here, it means that the hereditary cause of HCM might have been found in one of your (close) relatives. You have the options to take a DNA test to learn more about the predisposition to HCM in you & your family.
 
-Heredity (3.3 + generalised 3.2)
-Since we are talking, this means that the hereditary cause of HCM might have been found in one of your (close) relatives. You have the options to take a DNA test to learn more about the predisposition to HCM in you & your family.
 
+[[How does heredity work?|HeredityWork]]
+[[I would like to know more about DNA testing instead.|HeredityDNATest]]
+[[Okay!|HeridityChildren]]
 ===
-title: HCMCost
+title: DNATestUpsAndDown
 tags: 
 speaker: Evyln
 colorID: 2
-position: 1267,-1681
----
-
-Cost
-===
-title: HCMUpsAndDown
-tags: 
-speaker: Evyln
-colorID: 2
-position: 466,1234
+position: 27,950
 ---
 
 I’ll start out with the ups! If you know that you have the predisposition to HCM this can help with early detection and treatment. It also gives you clarity, if you do not have the predisposition, you don’t have to worry about it anymore! It can give you and your family closure, especially if you want to have children. 
@@ -251,18 +235,396 @@ However, sometimes knowing about it, can lead to fear or anxiety, it really depe
 
 Would you like to know more about a certain aspect?
 
+[[Okay, what are the downs?|HCMDowns]]
+
+===
+title: HCMDowns
+tags: 
+speaker: Evyln
+colorID: 2
+position: 366,1165
+---
+
+
+Sometimes knowing about it, can lead to fear or anxiety, it really depends on the person.  Finally, it can have an impact on insurance and healthcare costs, so it’s good to be aware of those aspects as well.
+
+Would you like to know more about a certain aspect?
+
 [[I have some concerns regarding my daily life.|HCMConcern]]
-[[What are the ups/downs of a DNA test?|HCMUpsAndDown]]
+[[I’m really worried and anxious about this whole thing. How can I process this?|HCMEmotions]]
+[[Should I worry about this when wanting to have a child?|HeridityChildren]]
 [[I have some practical concerns|HCMPracticality]]
+===
+title: HCMEmotions
+tags: 
+speaker: Evyln
+colorID: 2
+position: 742,1806
+---
+
+
+It's completely natural to feel anxious when you're facing something like this. A lot of people feel the same way when dealing with HCM and it’s possible future challenges. It can feel overwhelming, but the important thing to remember is that you're not alone. 
+
+[[Oh okay, alright.|HCMEmotions2]]
+
+===
+title: HCMEmotions2
+tags: 
+speaker: Evyln
+colorID: 2
+position: 1119,1558
+---
+
+ First, I’d like you to focus on the information you’re getting now, rather than jumping into conclusions straight away. Talking to someone, maybe a friend or a family member about your concern also helps. Another option is to reach out to a genetic counsellor or social worker. They’re trained to help people process the emotional side of conditions like HCM. They can give you tools to cope with the uncertainty you're feeling.
+ 
+[[I have some concerns regarding my daily life.|HCMConcern]]
 
 ===
 title: HCMPracticality
 tags: 
 speaker: Evyln
 colorID: 2
-position: 109,1939
+position: -308,1966
 ---
+I have some practical concerns
 
-Practicality
+[[How much does the DNA Test cost?|DNATestCost]]
+[[Does it have any effect on my insurance?|DNATestInsurance]]
+[[When should I take a DNA test? And can I also take it later?|DNATestLater]]
+===
+title: HCMIntro
+tags: 
+speaker: Evyln
+colorID: 0
+position: -1983,-148
+---
+Nice to meet you $userFirstName. What brought you here today?
 
+[[One of my family members discovered they have HCM and I got notified that I could develop this disease too.|HCMDesc1]]
+[[I am just curious to learn more about HCM.|HCMDesc2]]
+===
+title: HCMDesc1
+tags: 
+speaker: Evyln
+colorID: 0
+position: -1647,-356
+---
+I am sorry to hear that,$userFirstName. I hope after our conversation, it will be more clear to you what this could mean and you’ll know what the best next steps for you are!
+
+[[Thank you, that means a lot to me. I’m hoping that by the end of our conversation, I’ll have a better understanding and feel more confident about what to do next.|HCMHowMuchKnow]]
+===
+title: HCMDesc2
+tags: 
+speaker: Evyln
+colorID: 0
+position: -1644,12
+---
+Knowledge is power, good for you, $userFirstName!
+
+[[Thank you! I agree, understanding more about this really helps me feel more empowered. I'm glad we're having this conversation!|HCMHowMuchKnow ]]
+===
+title: HCMScientific
+tags: 
+speaker: Evyln
+colorID: 0
+position: 181,-1492
+---
+As mentioned before, HCM means thickened heart muscle, especially the septum between the heart chambers.  The heart muscle can thicken over the course of life, and can do so without putting more strain on the heart.
+
+Only when the muscle becomes seriously thickened does it make the heart less able to pump blood.
+
+![HCM Image](https:\//cdn.myhealthteams.com/graphic/6604185702ac640a636f7ca6/woriginal/1.hypertrophic_cardiomyopathy_copy-0d10ffefdd99f2028134694f7cedd7e2.webp?1711544400)
+
+
+[[Can you tell me more regarding other aspects of HCM?|HCMQuestion]]
+[[I would like to learn even more in-depth.| HCMINdepthMore]]
+===
+title: HCMINdepthMore
+tags: 
+speaker: Evyln
+colorID: 8
+position: -373,-1490
+---
+Of course, $userFirstName! 
+
+In HCM, the muscle wall of the heart is thickened.
+This thickening is usually mainly in the muscle
+
+wall between the right ventricle and the left ventricle, also referred to as the septum.
+If the muscle
+
+wall is slightly thickened, the contraction is usually still good and the heart pumps out the blood
+
+properly.
+With a severely thickened heart muscle, the heart muscle becomes stiffer and the heart
+
+muscle is less able to relax, causing the left ventricle to fill less well with blood.
+The amount of blood
+
+that the left ventricle can pump out is therefore reduced, causing less oxygen-rich blood to enter
+
+the body.
+
+Sometimes the septum becomes so thickened that it gets in the way of the blood that needs to be
+
+pumped out of the heart.
+This is then referred to as 'Hypertrophic Obstructive Cardiomyopathy'
+
+(HOCM).
+People with HOCM often have difficulty with exertion, may feel unwell with even minor
+
+exertion and sometimes faint during exertion.
+
+The disease can also cause damage to the heart muscle.
+Cardiac muscle cells can die and are then
+
+replaced by connective tissue.
+The heart can then contract less well and pump blood.
+This can also
+
+disrupt electrical activity in the heart.
+This can cause cardiac arrhythmias that can cause someone
+
+to faint.
+Sometimes this can also cause someone to die suddenly.
+
+With an ECG at rest or during exercise, the heart rhythm can be examined and indications of HCM
+
+can be seen.
+Sometimes a 24-hour heart film is necessary to detect cardiac arrhythmias.
+
+The mobility and pumping function of the heart can usually be clearly examined with an ultrasound.
+
+Sometimes an MRI scan is necessary to get a better look at the heart. Damage to the heart can be
+
+visualized with an MRI scan of the heart with contrast fluid.
+
+[[Can you tell me more regarding other aspects of HCM? |HCMQuestion]]
+===
+title: NoSymptom
+tags: 
+speaker: Evyln
+colorID: 0
+position: 1235,-1128
+---
+It’s important to know that there are ways to manage the condition and reduce risks, such as:
+Lifestyle changes: Avoid strenuous exercise. A specialist will recommend safe activities and monitor blood pressure.
+Regular check-ups: Your mum will need a heart specialist evaluation every 5 years.
+Counseling can provide support as you navigate your emotions and concerns. It’s okay to seek help for yourself—you're not alone in this.
+
+[[Can you tell me more regarding other aspects of HCM?|HCMQuestion]]
+===
+title: ElaborateSymptom
+tags: 
+speaker: Evyln
+colorID: 0
+position: 1230,-1364
+---
+Chest pain, sometimes with pain radiating to the left arm, back or jaw
+Reduced fitness and endurance
+Shortness of breath on exertion
+Heart rhythm disorders, where the heart beats quickly or irregularly
+Sometimes cardiac arrhythmias can lead to dizziness, loss of consciousness or even sudden death. 
+In rare cases, cardiac arrest is the first complain.
+
+[[Can you tell me more regarding other aspects of HCM?|HCMQuestion]]
+===
+title: YesSymptom
+tags: 
+speaker: Evyln
+colorID: 0
+position: 1224,-1605
+---
+Treatment by a heart specialist is personalized to your needs. Possible approaches include:
+Regular cardiologist visits
+Lifestyle adjustments: Avoid strenuous activities; safe exercise options will be discussed with her doctor
+Medical ICD: If at risk of dangerous heart rhythms, a device may be implanted to prevent sudden cardiac events
+Surgery: In some cases, surgery to thin the heart muscle may help reduce symptoms
+Heart transplant: In rare, severe cases, a transplant might be necessary
+Counseling can offer support as you process these possibilities. It’s okay to seek help if you feel overwhelmed.
+
+[[Can you tell me more regarding other aspects of HCM?|HCMQuestion]]
+===
+title: HeredityDNATest
+tags: 
+speaker: Evyln
+colorID: 0
+position: 1221,-167
+---
+A DNA test is used to determine whether someone has a hereditary predisposition to HCM or not. A DNA test looks for the variant in the DNA found in your family member with HCM. We know that this variant in the DNA can cause HCM. A DNA test is done by taking blood from you, which is collected and then examined in the laboratory.
+
+[[I would like to continue learning more about other aspects of HCM.|HCMQuestion]]
+[[How does a DNA test work?|DNATestWorks]]
+[[What are the up’s and down’s of DNA testing?|DNATestUpsAndDown]]
+===
+title: HeridityChildren
+tags: 
+speaker: Evyln
+colorID: 0
+position: 1192,-821
+---
+Would you like to know how this could impact your children?
+
+[[I do not have children and do not want children|HCMQuestion]]
+[[I have children|HaveChildren]]
+[[I want to have children in the future|WantChildren]]
+===
+title: HeredityWork
+tags: 
+speaker: Evyln
+colorID: 0
+position: 1194,-561
+---
+Our body is made up of billions of cells, each doing specific jobs (like heart cells or nerve cells). Inside these cells are chromosomes, which are tightly packed strands of DNA. DNA holds all the genetic information, and this information is stored in genes, which are sections of DNA.
+Genes act as instructions for how your body works—everything from your hair color to how your organs function. You inherit one version of each gene from your biological parents. A problem in a gene (called a mutation or variant) can disrupt its function, potentially leading to health issues.
+
+
+[[Okay!|HeridityChildren]]
+===
+title: WantChildren
+tags: 
+speaker: Evyln
+colorID: 0
+position: 1542,-553
+---
+[]( https://www.youtube.com/embed/Yincup1ktr8)
+
+[[I would like to continue learning more about other aspects of HCM.|HCMQuestion]]
+===
+title: HaveChildren
+tags: 
+speaker: Evyln
+colorID: 0
+position: 1547,-825
+---
+If there’s a hereditary condition in your family, it’s important to talk to your children about it, especially if a DNA test shows you have the predisposition. You know your children best, so you can decide when and how to share this information.
+
+It may help to discuss it before taking the test, as some parents take the test with their children in mind. However, be mindful that they might not want to know their risk yet, which could make things uncomfortable.
+
+Some people prefer to wait until after the test results, hoping not to pass on any worry if the test is negative.
+
+You should take some of these aspects into consideration:
+Age of children
+Decisions about DNA testing in children
+Worries about the children
+
+[[I would like to continue learning more about other aspects of HCM.|HCMQuestion]]
+[[I would like to learn more about these aspects.|ChildrenAspect]]
+===
+title: ChildrenAspect
+tags: 
+speaker: Evyln
+colorID: 0
+position: 1833,-831
+---
+Would you like to learn more about these aspects might impact your decisions?
+
+[[Age|ChildrenAge]]
+[[DNA testing|ChildrenDNA]]
+[[Worries about the children|ChildrenWorries]]
+===
+title: ChildrenWorries
+tags: 
+speaker: Evyln
+colorID: 0
+position: 2115,-530
+---
+This is a difficult topic, tensions can also sometimes arise between parents and children. If you find it difficult to talk about this with your children, you can request a personal meeting with a medical social worker. They are specially trained in hereditary diseases. They can give you tools to start the conversation. You can request a conversation via the contact page
+
+[[I would like to learn more about these aspects.|ChildrenAspect]]
+===
+title: ChildrenDNA
+tags: 
+speaker: Evyln
+colorID: 0
+position: 2117,-788
+---
+DNA test in children
+If you have the hereditary predisposition, all your children are eligible for a DNA test. A DNA test in children under the age of 10 is usually not necessary because HCM usually develops later. Because HCM can sometimes cause symptoms in teenagers, it is advisable for children from about 10 years of age to consider a DNA test. To discuss a possible DNA test, your child can be referred to our outpatient clinic by us or the GP. To help you and your child with this as best as possible, you and your child will always be seen at the Clinical Genetics Outpatient Clinic in the hospital during a DNA test in childhood. After a conversation with a clinical geneticist (hereditary doctor) and social worker, you can choose whether or not to do a DNA test on your child.
+
+[[I would like to learn more about these aspects.|ChildrenAspect]]
+===
+title: ChildrenAge
+tags: 
+speaker: Evyln
+colorID: 0
+position: 2118,-1055
+---
+Adult children
+If the DNA test shows that you have the hereditary predisposition, you would do well to tell any adult children about it. The advice is not to wait; there may be a risk to their health. Tensions may also arise between you and your children.
+
+If it turns out that you have the hereditary predisposition, your adult children are eligible for a check-up with a heart specialist. Even if you decide not to test, any children you may have are eligible for this. If your DNA test shows that you have no hereditary predisposition, then checking your children is not necessary.
+
+Minor children
+When, what and how you tell your minor children about the hereditary disease obviously depends on the age and development of your child(ren). It can be difficult for young children to understand what it is about and what the consequences may be. It is often good to tell children step by step.
+
+If it turns out that you have the hereditary predisposition, minor children are eligible for a check-up with a pediatric cardiologist, from the age of 10 to 12 years. Even if you decide not to test, any children you may have are eligible for this. If your DNA test shows that you have no hereditary predisposition, then checking your children is not necessary.
+
+[[I would like to learn more about these aspects.|ChildrenAspect]]
+===
+title: DNATestWorks
+tags: 
+speaker: Evyln
+colorID: 0
+position: 1587,-32
+---
+The DNA-poli (ed: the platform) is there to inform you and help you make your choice. If you want a DNA test, this is how it works:
+Step 1: We will ask you later what your preference is. If you choose, a short video call with a healthcare provider will follow for confirmation and to answer any questions.
+Step 2: You will then receive a package with tubes for taking blood and a form. This will be sent to you by post.
+Step 3: You can take this package with you to a blood test clinic near you. You can have blood drawn there.
+Step 4: The blood test clinic sends the blood tubes to us. We perform the DNA test in the laboratory of the university hospital where your family member was also tested.
+Step 5: The results will be known after approximately 6 weeks. You can get the results via the DNA clinic, in your own portal. If you have any questions, you can then make a telephone appointment. If you prefer, we can also discuss the results with you by telephone. You can indicate this during the conversation with the care provider.
+
+[[What are the up’s and down’s of DNA testing?|DNATestUpsAndDown]]
+===
+title: DNATestCost
+tags: 
+speaker: Evyln
+colorID: 0
+position: 166,1950
+---
+The cost of a DNA test is covered by your basic insurance, which is good news. However, you might need to pay a part of the cost out-of-pocket, depending on how much of your deductible you’ve already used this year. For most people, the costs are minimal.
+
+[[Okay, I have heard enough! Thank you for your help Evelyn!|End]]
+[[Okay, I still have some practical concerns|HCMPracticality]]
+[[Can you tell me about the pros and cons of a DNA test?|DNATestUpsAndDown]]
+[[I still have some concerns regarding my daily life|HCMConcern]]
+===
+title: DNATestInsurance
+tags: 
+speaker: Evyln
+colorID: 0
+position: 50,2235
+---
+[NAME], you do not have to worry about your insurance, since all care necessary for a hereditary heart disease will be covered by basic insurance. It also means that you do not have to provide any information regarding your HCM diagnosis when taking out basic insurance in the Netherlands. 
+
+[[Okay, I have heard enough! Thank you for your help Evelyn!|End]]
+[[Okay, I still have some practical concerns|HCMPracticality]]
+[[Can you tell me about the pros and cons of a DNA test?|DNATestUpsAndDown]]
+[[I still have some concerns regarding my daily life|HCMConcern]]
+===
+title: DNATestLater
+tags: 
+speaker: Evyln
+colorID: 0
+position: -222,2403
+---
+A DNA test can be taken any time, so you can take your time! It is often a good time when you are in the right head-space. It is also possible not to take a DNA test of course, we then recommend you to get examined on a regular basis by the cardiologist.
+
+If you do change your mind,  you can always still take the DNA test!
+
+[[Okay, I have heard enough! Thank you for your help Evelyn!|End]]
+[[Okay, I still have some practical concerns|HCMPracticality]]
+[[Can you tell me about the pros and cons of a DNA test?|DNATestUpsAndDown]]
+[[I still have some concerns regarding my daily life|HCMConcern]]
+===
+title: End
+tags: 
+speaker: Evyln
+colorID: 0
+position: 802,2293
+---
+I hope you learned a lot more about HCM through our conversation and hopefully I was able to give you a more peace of mind. Thank you for this conversation, would you like to receive a pdf with all the information we discussed about?
+
+[[THank you!|End]]
 ===
