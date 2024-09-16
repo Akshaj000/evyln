@@ -330,8 +330,7 @@ Alright get ready, as mentioned before, HCM means thickened heart muscle, especi
 
 Only when the muscle becomes seriously thickened does it make the heart less able to pump blood.
 
-![HCM Image](https:\//cdn.myhealthteams.com/graphic/6604185702ac640a636f7ca6/woriginal/1.hypertrophic_cardiomyopathy_copy-0d10ffefdd99f2028134694f7cedd7e2.webp?1711544400)
-
+<<action type="image" value="hcm.png">>
 
 [[Can you tell me more regarding other aspects of HCM?|HCMQuestion]]
 [[I would like to learn even more in-depth.| HCMINdepthMore]]
@@ -448,7 +447,7 @@ position: 1221,-167
 ---
 A DNA test is used to determine whether someone has a hereditary predisposition to HCM or not. A DNA test looks for the variant in the DNA found in your family member with HCM. We know that this variant in the DNA can cause HCM. A DNA test is done by taking blood from you, which is collected and then examined in the laboratory.
 
-####IMAGE HERE
+<<action type="image" value="image2.png">>
 
 
 
@@ -575,6 +574,8 @@ Step 2: You will then receive a package with tubes for taking blood and a form. 
 Step 3: You can take this package with you to a blood test clinic near you. You can have blood drawn there.
 Step 4: The blood test clinic sends the blood tubes to us. We perform the DNA test in the laboratory of the university hospital where your family member was also tested.
 Step 5: The results will be known after approximately 6 weeks. You can get the results via the DNA clinic, in your own portal. If you have any questions, you can then make a telephone appointment. If you prefer, we can also discuss the results with you by telephone. You can indicate this during the conversation with the care provider.
+
+<<action type="image" value="image3.png">>
 
 [[What are the up’s and down’s of DNA testing?|DNATestUpsAndDown]]
 ===
